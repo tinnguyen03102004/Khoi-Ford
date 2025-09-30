@@ -1,55 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saigon Ford | Đại lý Ford chính hãng – Ngô Anh Khôi</title>
-  <meta name="description" content="Trang chính thức giới thiệu Saigon Ford (Đại lý Ford chính hãng). Liên hệ Ngô Anh Khôi để tư vấn xe Ford, báo giá, lái thử và ưu đãi mới nhất." />
+  <title>Saigon Ford — Ngô Anh Khôi | Tư vấn minh bạch, báo giá nhanh</title>
+  <meta name="description" content="Saigon Ford — Tư vấn minh bạch, báo giá nhanh, lái thử và hỗ trợ thủ tục trả góp. Liên hệ Ngô Anh Khôi: +84 908 569 309." />
   <link rel="icon" href="/favicon.ico" />
-  <meta property="og:title" content="Saigon Ford | Đại lý Ford – Ngô Anh Khôi" />
-  <meta property="og:description" content="Tư vấn – Báo giá – Lái thử. Liên hệ Ngô Anh Khôi (Đại diện Saigon Ford)." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://khoingo.vn/" />
-  <meta property="og:image" content="https://khoingo.vn/og-image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; }
-  </style>
-  
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "AutoDealer",
+      "@type": "Organization",
       "name": "Saigon Ford",
-      "brand": {
-        "@type": "Brand",
-        "name": "Ford"
-      },
-      "image": "https://khoingo.vn/og-image.jpg",
-      "url": "https://khoingo.vn/",
-      "telephone": "+84-908-569-309",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Bình Thạnh, TP. Hồ Chí Minh",
-        "addressLocality": "TP. Hồ Chí Minh",
-        "addressRegion": "HCM",
-        "postalCode": "700000",
-        "addressCountry": "VN"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-          "opens": "08:00",
-          "closes": "18:00"
-        }
-      ],
+      "url": "https://example.com",
+      "logo": "https://example.com/Ford.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+84-908-569-309",
@@ -77,43 +43,81 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="h-16 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3">
-          <img src="logoFord.png" alt="Ford" class="h-7 w-auto" />
-          <span class="font-semibold">Saigon Ford</span>
+          <img src="Ford.png" alt="Saigon Ford" class="h-8 w-auto" />
+          <span class="font-semibold tracking-tight">Saigon Ford</span>
         </a>
-        <nav class="hidden md:flex items-center gap-6 text-sm">
+
+        <button type="button" id="nav-toggle" class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-200 p-2 text-slate-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
           <a href="#models" class="hover:text-blue-700">Dòng xe</a>
           <a href="#offers" class="hover:text-blue-700">Ưu đãi</a>
           <a href="#services" class="hover:text-blue-700">Dịch vụ</a>
           <a href="#about" class="hover:text-blue-700">Về chúng tôi</a>
           <a href="#contact" class="hover:text-blue-700">Liên hệ</a>
         </nav>
-        <div class="flex items-center gap-3">
-          <a href="tel:+84908569309" class="hidden sm:inline-flex items-center rounded-xl border border-blue-600 px-3 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50">Gọi Khôi</a>
+
+        <a href="tel:+84908569309" class="sm:hidden inline-flex items-center rounded-xl border border-blue-600 px-3 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50">Gọi Khôi</a>
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:+84908569309" class="inline-flex items-center rounded-xl border border-blue-600 px-3 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50">Gọi Khôi</a>
           <a href="#contact" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white hover:bg-blue-700">Nhận báo giá</a>
         </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200">
+        <nav class="py-3 space-y-2 text-sm font-medium">
+          <a href="#models" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Dòng xe</a>
+          <a href="#offers" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Ưu đãi</a>
+          <a href="#services" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Dịch vụ</a>
+          <a href="#about" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Về chúng tôi</a>
+          <a href="#contact" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Liên hệ</a>
+          <a href="tel:+84908569309" class="block rounded-lg bg-blue-600 px-3 py-2 text-center font-semibold text-white hover:bg-blue-700">Gọi ngay</a>
+        </nav>
       </div>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="relative overflow-hidden bg-gradient-to-b from-white to-slate-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
-      <div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="order-2 lg:order-1">
         <p class="text-xs uppercase tracking-wider text-slate-500">Đại lý Ford chính hãng</p>
-        <h1 class="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">Saigon Ford – chọn xe chuẩn, dịch vụ chuẩn. <span class="text-blue-600">Ngô Anh Khôi</span> đồng hành.</h1>
-        <p class="mt-4 text-slate-600 text-lg">Tư vấn minh bạch – báo giá nhanh – hỗ trợ lái thử và thủ tục trả góp. Hãy để Khôi giúp bạn chọn chiếc Ford phù hợp nhất.</p>
+        <h1 class="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+          Saigon Ford – chọn xe chuẩn, dịch vụ chuẩn. <span class="text-blue-600">Ngô Anh Khôi</span> đồng hành.
+        </h1>
+        <p class="mt-4 text-slate-600 text-base sm:text-lg">
+          Tư vấn minh bạch – báo giá nhanh – hỗ trợ lái thử và thủ tục trả góp. Hãy để Khôi giúp bạn chọn chiếc Ford phù hợp nhất.
+        </p>
         <div class="mt-6 flex flex-wrap gap-3">
           <a href="#models" class="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2.5 text-white font-semibold hover:bg-blue-700">Xem dòng xe</a>
           <a href="#contact" class="inline-flex items-center rounded-xl border border-slate-300 px-4 py-2.5 text-slate-700 font-medium hover:bg-slate-100">Nhận tư vấn 1-1</a>
         </div>
-        <div class="mt-6 flex items-center gap-4 text-sm text-slate-500">
-          <div class="flex items-center gap-1">⭐️⭐️⭐️⭐️⭐️ <span>Khách hàng hài lòng</span></div>
-          <div>•</div>
-          <div>Phục vụ TP.HCM & lân cận</div>
-        </div>
+
+        <dl class="mt-6 grid grid-cols-2 gap-4 text-sm text-slate-600 sm:max-w-md">
+          <div class="rounded-xl border border-blue-100 bg-white/70 px-4 py-3">
+            <dt class="text-xs uppercase tracking-wide text-blue-600">Khách hàng hài lòng</dt>
+            <dd class="mt-1 text-lg font-semibold text-slate-800">500+ lượt đánh giá 5★</dd>
+          </div>
+          <div class="rounded-xl border border-blue-100 bg-white/70 px-4 py-3">
+            <dt class="text-xs uppercase tracking-wide text-blue-600">Khu vực phục vụ</dt>
+            <dd class="mt-1 text-lg font-semibold text-slate-800">TP.HCM & miền Nam</dd>
+          </div>
+        </dl>
       </div>
-      <div class="relative">
-        <img src="/hero-ford.jpg" alt="Ford lineup" class="w-full rounded-2xl shadow-2xl" />
+
+      <div class="order-1 lg:order-2 relative">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-2xl border border-slate-200">
+          <img src="showroom/mach-e.png" alt="Ford Mustang Mach-E" class="h-full w-full object-cover" />
+        </div>
+        <div class="absolute bottom-4 left-4 right-4 hidden sm:flex items-center justify-between rounded-2xl bg-white/90 px-4 py-3 text-sm font-medium text-slate-700 shadow-lg">
+          <span>Ford Mustang Mach-E</span>
+          <span>Tư vấn đặt trước</span>
+        </div>
       </div>
     </div>
   </section>
@@ -125,39 +129,91 @@
         <h2 class="text-2xl sm:text-3xl font-bold">Dòng xe Ford bán chạy</h2>
         <a href="#contact" class="text-sm font-medium text-blue-700 hover:underline">Hỏi giá ngay →</a>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card: Ranger -->
-        <article class="group bg-white rounded-2xl shadow p-5 border border-slate-100">
-          <img src="/models/ranger.jpg" alt="Ford Ranger" class="rounded-xl mb-4 w-full" />
-          <h3 class="text-lg font-semibold">Ford Ranger</h3>
-          <p class="mt-1 text-sm text-slate-600">Bán tải đa dụng, mạnh mẽ – phù hợp công việc lẫn gia đình.</p>
-          <div class="mt-4 flex items-center justify-between">
-            <span class="text-sm text-slate-500">Từ ~[giá dự kiến]</span>
-            <a href="#contact" class="text-sm font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Card: Ranger Raptor -->
+        <article class="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="showroom/raptor.png" alt="Ford Ranger Raptor" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <h3 class="mt-4 text-lg font-semibold">Ford Ranger Raptor</h3>
+          <p class="mt-1 text-sm text-slate-600">Bán tải hiệu năng cao với động cơ Bi-Turbo, hệ treo FOX êm ái cho mọi địa hình.</p>
+          <div class="mt-4 flex items-center justify-between text-sm">
+            <span class="font-semibold text-slate-800">Từ 1,299 tỷ đồng</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
           </div>
         </article>
-        <!-- Card: Everest -->
-        <article class="group bg-white rounded-2xl shadow p-5 border border-slate-100">
-          <img src="/models/everest.jpg" alt="Ford Everest" class="rounded-xl mb-4 w-full" />
-          <h3 class="text-lg font-semibold">Ford Everest</h3>
-          <p class="mt-1 text-sm text-slate-600">SUV 7 chỗ sang – an toàn, công nghệ cao, cho hành trình êm ái.</p>
-          <div class="mt-4 flex items-center justify-between">
-            <span class="text-sm text-slate-500">Từ ~[giá dự kiến]</span>
-            <a href="#contact" class="text-sm font-semibold text-blue-700 hover:underline">Tư vấn lăn bánh</a>
+
+        <!-- Card: Everest Titanium+ -->
+        <article class="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="showroom/everest.png" alt="Ford Everest Titanium" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <h3 class="mt-4 text-lg font-semibold">Ford Everest Titanium+</h3>
+          <p class="mt-1 text-sm text-slate-600">SUV 7 chỗ cao cấp – công nghệ an toàn Co-Pilot360, nội thất sang trọng cho gia đình.</p>
+          <div class="mt-4 flex items-center justify-between text-sm">
+            <span class="font-semibold text-slate-800">Từ 1,499 tỷ đồng</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn lăn bánh</a>
           </div>
         </article>
-        <!-- Card: Territory -->
-        <article class="group bg-white rounded-2xl shadow p-5 border border-slate-100">
-          <img src="/models/territory.jpg" alt="Ford Territory" class="rounded-xl mb-4 w-full" />
-          <h3 class="text-lg font-semibold">Ford Territory</h3>
-          <p class="mt-1 text-sm text-slate-600">Crossover đô thị – thiết kế hiện đại, tiết kiệm nhiên liệu.</p>
-          <div class="mt-4 flex items-center justify-between">
-            <span class="text-sm text-slate-500">Từ ~[giá dự kiến]</span>
-            <a href="#contact" class="text-sm font-semibold text-blue-700 hover:underline">Đặt lịch lái thử</a>
+
+        <!-- Card: Territory Titanium -->
+        <article class="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="showroom/territory.png" alt="Ford Territory Titanium" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <h3 class="mt-4 text-lg font-semibold">Ford Territory Titanium</h3>
+          <p class="mt-1 text-sm text-slate-600">Crossover đô thị hiện đại – màn hình đôi 12&quot;, gói an toàn thông minh, tiết kiệm nhiên liệu.</p>
+          <div class="mt-4 flex items-center justify-between text-sm">
+            <span class="font-semibold text-slate-800">Từ 822 triệu đồng</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt lịch lái thử</a>
           </div>
         </article>
       </div>
-      <p class="mt-3 text-xs text-slate-500">*Giá và cấu hình chỉ mang tính tham khảo. Vui lòng liên hệ Khôi để nhận báo giá chính xác và ưu đãi theo thời điểm.</p>
+
+      <p class="mt-3 text-xs text-slate-500">*Giá lăn bánh ước tính tại TP.HCM (bao gồm VAT). Vui lòng liên hệ Khôi để cập nhật khuyến mại và chương trình trả góp.</p>
+    </div>
+  </section>
+
+  <!-- SHOWROOM -->
+  <section class="py-16 bg-white" aria-labelledby="showroom-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-wider text-blue-600">Thư viện thực tế</p>
+          <h2 id="showroom-heading" class="text-2xl sm:text-3xl font-bold text-slate-900">Hình ảnh xe Ford tại showroom</h2>
+        </div>
+        <a href="#contact" class="inline-flex items-center self-start rounded-xl border border-blue-600 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-50">Đặt lịch xem xe</a>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <figure class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="showroom/ranger-raptor.png" alt="Ford Ranger Raptor trưng bày" class="h-full w-full object-cover" />
+          </div>
+          <figcaption class="px-5 py-4 text-sm text-slate-700">
+            <p class="font-semibold text-slate-900">Ford Ranger Raptor</p>
+            <p class="mt-1">Bán tải địa hình với phụ kiện chính hãng từ Saigon Ford.</p>
+          </figcaption>
+        </figure>
+        <figure class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="showroom/everest-ambient.png" alt="Ford Everest Titanium+ trên đường thử" class="h-full w-full object-cover" />
+          </div>
+          <figcaption class="px-5 py-4 text-sm text-slate-700">
+            <p class="font-semibold text-slate-900">Ford Everest Titanium+</p>
+            <p class="mt-1">Không gian rộng rãi, phù hợp mọi hành trình gia đình.</p>
+          </figcaption>
+        </figure>
+        <figure class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="showroom/mach-e.png" alt="Ford Mustang Mach-E chạy địa hình" class="h-full w-full object-cover" />
+          </div>
+          <figcaption class="px-5 py-4 text-sm text-slate-700">
+            <p class="font-semibold text-slate-900">Ford Mustang Mach-E</p>
+            <p class="mt-1">Crossover thuần điện, sẵn sàng cho xu hướng di chuyển xanh.</p>
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -209,7 +265,7 @@
           <li>• Lịch lái thử linh hoạt tại HCM & vùng lân cận</li>
         </ul>
       </div>
-      <div class="bg-white rounded-2xl shadow p-6 border border-slate-100">
+      <div class="bg-white rounded-2xl shadow p-6 border border-slate-100 space-y-4">
         <div class="flex items-center gap-4">
           <img src="/khoi-avatar.jpg" alt="Ngô Anh Khôi" class="h-16 w-16 rounded-full object-cover" />
           <div>
@@ -224,11 +280,11 @@
           </div>
           <div>
             <dt class="text-slate-500">Zalo</dt>
-            <dd class="font-medium"><a href="https://zalo.me/0908569309" class="hover:underline">zalo.me/xxxxxxxxx</a></dd>
+            <dd class="font-medium"><a href="https://zalo.me/0908569309" class="hover:underline">zalo.me/0908569309</a></dd>
           </div>
           <div>
             <dt class="text-slate-500">Email</dt>
-            <dd class="font-medium"><a href="mailto:ngoanhkhoi0909@gmail.com" class="hover:underline">email@domain</a></dd>
+            <dd class="font-medium"><a href="mailto:ngoanhkhoi0909@gmail.com" class="hover:underline">ngoanhkhoi0909@gmail.com</a></dd>
           </div>
           <div>
             <dt class="text-slate-500">Facebook</dt>
@@ -271,9 +327,10 @@
             <p><strong>Giờ làm việc:</strong> 8:00 – 18:00 (T2–T7)</p>
           </div>
         </div>
+
         <div class="bg-white rounded-2xl overflow-hidden shadow border border-slate-100 min-h-[320px]">
-          <!-- Google Map embed placeholder -->
-          <iframe class="w-full h-full min-h-[320px]" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=[MAPS_EMBED_CODE]"></iframe>
+          <!-- Google Map -->
+          <iframe class="w-full h-full min-h-[320px]" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2185725205026!2d106.69273657593353!3d10.795708558821024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e439e78c45%3A0x6889d384d08632c9!2sFord%20Saigon!5e0!3m2!1svi!2svi!4v1714986000000"></iframe>
         </div>
       </div>
     </div>
@@ -295,6 +352,20 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (navToggle && mobileMenu) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('hidden');
+        navToggle.setAttribute('aria-expanded', String(!isOpen));
+      });
+      mobileMenu.querySelectorAll('a').forEach((link) =>
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          navToggle.setAttribute('aria-expanded', 'false');
+        })
+      );
+    }
   </script>
 </body>
 </html>
