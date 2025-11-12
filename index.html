@@ -391,7 +391,13 @@
           <h2 class="text-2xl sm:text-3xl font-bold">Liên hệ & Đăng ký lái thử</h2>
           <p class="mt-2 text-slate-600">Điền form, Khôi sẽ gọi lại trong giờ làm việc.</p>
 
-          <form class="mt-6 bg-white rounded-2xl p-6 shadow border border-slate-100" name="contact" netlify>
+          <form
+            id="contact-form"
+            class="mt-6 bg-white rounded-2xl p-6 shadow border border-slate-100"
+            name="contact"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbyFb0rJ6NdwTdwXmL9cMF8or-tuehM_nNsOlsUX8efCvF9KaMe2BWHEkiucUB1_LvHLzw/exec"
+          >
             <div class="grid sm:grid-cols-2 gap-4">
               <label class="block text-sm">Họ tên
                 <input type="text" name="name" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600" />
@@ -462,6 +468,47 @@
         })
       );
     }
+    const form = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+
+    if (form && formStatus) {
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        formStatus.classList.remove('hidden');
+        formStatus.textContent = 'Đang gửi thông tin...';
+
+        const formData = new FormData(form);
+        const payload = {
+          name: formData.get('name') || '',
+          phone: formData.get('phone') || '',
+          model: formData.get('model') || '',
+          message: formData.get('message') || '',
+          created_at: new Date().toISOString(),
+        };
+
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+          });
+
+          if (response.ok) {
+            formStatus.textContent = 'Gửi thành công! Khôi sẽ liên hệ với bạn sớm.';
+            form.reset();
+          } else {
+            const message = await response.text();
+            formStatus.textContent = `Có lỗi xảy ra, vui lòng thử lại. (${message})`;
+          }
+        } catch (error) {
+          formStatus.textContent = 'Không thể gửi thông tin, vui lòng kiểm tra kết nối và thử lại.';
+          console.error('Submit error:', error);
+        }
+      });
+    }
   </script>
+  <div id="form-status" class="mt-4 text-sm text-slate-600 hidden"></div>
 </body>
 </html>
