@@ -415,6 +415,24 @@
             <button type="submit" class="mt-4 inline-flex items-center rounded-xl bg-blue-600 px-4 py-2.5 text-white font-semibold hover:bg-blue-700">Gửi yêu cầu</button>
           </form>
 
+          <div id="form-status" class="mt-4 hidden">
+            <div
+              id="form-status-content"
+              class="flex items-start gap-3 rounded-xl border bg-blue-50 border-blue-200 p-4 text-sm text-blue-700"
+              role="status"
+            >
+              <div id="form-status-message" class="flex-1" aria-live="polite"></div>
+              <button
+                type="button"
+                id="form-status-dismiss"
+                class="ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full border border-transparent text-base font-semibold text-blue-700 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                aria-label="Đóng thông báo"
+              >
+                &times;
+              </button>
+            </div>
+          </div>
+
           <div class="mt-6 text-sm text-slate-600 space-y-3">
             <p><strong>Hotline:</strong> <a href="tel:+84938793333" class="text-blue-700 hover:underline">+84 938 79 3333</a></p>
             <div>
@@ -470,12 +488,41 @@
     }
     const form = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
+    const formStatusMessage = document.getElementById('form-status-message');
+    const formStatusDismiss = document.getElementById('form-status-dismiss');
+    const formStatusContent = document.getElementById('form-status-content');
 
-    if (form && formStatus) {
+    const statusStyles = {
+      loading: ['border-blue-200', 'bg-blue-50', 'text-blue-700'],
+      success: ['border-green-200', 'bg-green-50', 'text-green-700'],
+      error: ['border-red-200', 'bg-red-50', 'text-red-700'],
+    };
+
+    const resetStatusStyles = () => {
+      if (!formStatusContent) return;
+      Object.values(statusStyles).forEach((classes) => {
+        classes.forEach((className) => formStatusContent.classList.remove(className));
+      });
+    };
+
+    const showStatus = (type, message) => {
+      if (!formStatus || !formStatusMessage || !formStatusContent) return;
+      resetStatusStyles();
+      (statusStyles[type] || []).forEach((className) => formStatusContent.classList.add(className));
+      formStatusMessage.textContent = message;
+      formStatus.classList.remove('hidden');
+    };
+
+    if (formStatusDismiss) {
+      formStatusDismiss.addEventListener('click', () => {
+        formStatus.classList.add('hidden');
+      });
+    }
+
+    if (form && formStatus && formStatusMessage && formStatusContent) {
       form.addEventListener('submit', async (event) => {
         event.preventDefault();
-        formStatus.classList.remove('hidden');
-        formStatus.textContent = 'Đang gửi thông tin...';
+        showStatus('loading', 'Đang gửi thông tin...');
 
         const formData = new FormData(form);
         const payload = {
@@ -496,19 +543,18 @@
           });
 
           if (response.ok) {
-            formStatus.textContent = 'Gửi thành công! Khôi sẽ liên hệ với bạn sớm.';
+            showStatus('success', 'Gửi thành công! Khôi sẽ liên hệ với bạn sớm.');
             form.reset();
           } else {
             const message = await response.text();
-            formStatus.textContent = `Có lỗi xảy ra, vui lòng thử lại. (${message})`;
+            showStatus('error', `Có lỗi xảy ra, vui lòng thử lại. (${message})`);
           }
         } catch (error) {
-          formStatus.textContent = 'Không thể gửi thông tin, vui lòng kiểm tra kết nối và thử lại.';
+          showStatus('error', 'Không thể gửi thông tin, vui lòng kiểm tra kết nối và thử lại.');
           console.error('Submit error:', error);
         }
       });
     }
   </script>
-  <div id="form-status" class="mt-4 text-sm text-slate-600 hidden"></div>
 </body>
 </html>
