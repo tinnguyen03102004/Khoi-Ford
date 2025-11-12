@@ -525,30 +525,17 @@
         showStatus('loading', 'Đang gửi thông tin...');
 
         const formData = new FormData(form);
-        const payload = {
-          name: formData.get('name') || '',
-          phone: formData.get('phone') || '',
-          model: formData.get('model') || '',
-          message: formData.get('message') || '',
-          created_at: new Date().toISOString(),
-        };
+        formData.append('created_at', new Date().toISOString());
 
         try {
-          const response = await fetch(form.action, {
+          await fetch(form.action, {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(payload),
+            mode: 'no-cors',
+            body: formData,
           });
 
-          if (response.ok) {
-            showStatus('success', 'Gửi thành công! Khôi sẽ liên hệ với bạn sớm.');
-            form.reset();
-          } else {
-            const message = await response.text();
-            showStatus('error', `Có lỗi xảy ra, vui lòng thử lại. (${message})`);
-          }
+          showStatus('success', 'Gửi thành công! Khôi sẽ liên hệ với bạn sớm.');
+          form.reset();
         } catch (error) {
           showStatus('error', 'Không thể gửi thông tin, vui lòng kiểm tra kết nối và thử lại.');
           console.error('Submit error:', error);
