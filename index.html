@@ -3,19 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Saigon Ford: Đại lý Ủy quyền hàng đầu của Ford tại Việt Nam – Đại diện kinh doanh: Ngô Anh Khôi</title>
   <meta name="description" content="Saigon Ford — Tư vấn minh bạch, báo giá nhanh, lái thử và hỗ trợ thủ tục trả góp. Liên hệ Ngô Anh Khôi: +84 938 79 3333." />
   <link rel="icon" href="/favicon.ico" />
+  <link rel="canonical" href="https://www.fordsaigon99.online/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Saigon Ford: Đại lý Ủy quyền hàng đầu của Ford tại Việt Nam – Ngô Anh Khôi">
+  <meta property="og:description" content="Tư vấn minh bạch, báo giá nhanh, lái thử và hỗ trợ thủ tục trả góp. Gọi Khôi: +84 938 79 3333.">
+  <meta property="og:url" content="https://www.fordsaigon99.online/">
+  <meta property="og:image" content="https://www.fordsaigon99.online/Ford.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saigon Ford – Ngô Anh Khôi">
+  <meta name="twitter:description" content="Tư vấn minh bạch, báo giá nhanh, lái thử và hỗ trợ trả góp.">
+  <meta name="twitter:image" content="https://www.fordsaigon99.online/Ford.png">
+
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16673835420">
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16673835420"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'AW-16673835420');
   </script>
 
@@ -25,8 +39,8 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Saigon Ford",
-      "url": "https://example.com",
-      "logo": "https://example.com/Ford.png",
+      "url": "https://www.fordsaigon99.online/",
+      "logo": "https://www.fordsaigon99.online/Ford.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+84-938-79-3333",
@@ -47,7 +61,12 @@
       ]
     }
   </script>
+
+  <style>
+    :focus-visible { outline: 2px solid rgb(37 99 235); outline-offset: 2px; }
+  </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800">
   <!-- HEADER -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
@@ -155,7 +174,7 @@
           <p class="mt-1 text-sm text-slate-600">Bán tải hiệu năng cao với động cơ Bi-Turbo, hệ treo FOX êm ái cho mọi địa hình.</p>
           <div class="mt-4 flex items-center justify-between text-sm">
             <span class="font-semibold text-slate-800">Từ 1,299 tỷ đồng</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
+            <a href="#contact" data-model="Ford Ranger Raptor" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
           </div>
         </article>
 
@@ -168,7 +187,7 @@
           <p class="mt-1 text-sm text-slate-600">SUV 7 chỗ cao cấp – công nghệ an toàn Co-Pilot360, nội thất sang trọng cho gia đình.</p>
           <div class="mt-4 flex items-center justify-between text-sm">
             <span class="font-semibold text-slate-800">Từ 1,468 tỷ đồng</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn lăn bánh</a>
+            <a href="#contact" data-model="Ford Everest Titanium+" class="font-semibold text-blue-700 hover:underline">Tư vấn lăn bánh</a>
           </div>
         </article>
 
@@ -181,7 +200,7 @@
           <p class="mt-1 text-sm text-slate-600">Crossover đô thị hiện đại – màn hình đôi 12&quot;, gói an toàn thông minh, tiết kiệm nhiên liệu.</p>
           <div class="mt-4 flex items-center justify-between text-sm">
             <span class="font-semibold text-slate-800">Từ 840 triệu đồng</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt lịch lái thử</a>
+            <a href="#contact" data-model="Ford Territory Titanium" class="font-semibold text-blue-700 hover:underline">Đặt lịch lái thử</a>
           </div>
         </article>
       </div>
@@ -239,8 +258,9 @@
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="bg-white rounded-2xl shadow p-5 border border-slate-100">
           <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+            <!-- icon -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-6 w-6" aria-hidden="true">
-              <path d="M2.25 18.75C7.71719 18.75 13.0136 19.4812 18.0468 20.8512C18.7738 21.0491 19.5 20.5086 19.5 19.7551V18.75M3.75 4.5V5.25C3.75 5.66421 3.41421 6 3 6H2.25M2.25 6V5.625C2.25 5.00368 2.75368 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.66421 20.5858 6 21 6H21.75M20.25 4.5H20.625C21.2463 4.5 21.75 5.00368 21.75 5.625V15.375C21.75 15.9963 21.2463 16.5 20.625 16.5H20.25M21.75 15H21C20.5858 15 20.25 15.3358 20.25 15.75V16.5M20.25 16.5H3.75M3.75 16.5H3.375C2.75368 16.5 2.25 15.9963 2.25 15.375V15M3.75 16.5V15.75C3.75 15.3358 3.41421 15 3 15H2.25M15 10.5C15 12.1569 13.6569 13.5 12 13.5C10.3431 13.5 9 12.1569 9 10.5C9 8.84315 10.3431 7.5 12 7.5C13.6569 7.5 15 8.84315 15 10.5ZM18 10.5H18.0075V10.5075H18V10.5ZM6 10.5H6.0075V10.5075H6V10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2.25 18.75C7.71719 18.75 13.0136 19.4812 18.0468 20.8512C18.7738 21.0491 19.5 20.5086 19.5 19.7551V18.75M3.75 4.5V5.25C3.75 5.66421 3.41421 6 3 6H2.25M2.25 6V5.625C2.25 5.00368 2.75368 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.66421 20.5858 6 21 6H21.75M20.25 4.5H20.625C21.2463 4.5 21.75 5.00368 21.75 5.625V15.375C21.75 15.9963 21.2463 16.5 20.625 16.5H20.25M21.75 15H21C20.5858 15 20.25 15.3358 20.25 15.75V16.5M20.25 16.5H3.75M3.75 16.5H3.375C2.75368 16.5 2.25 15.9963 2.25 15.375V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
           <h3 class="mt-4 font-semibold">Hỗ trợ lãi suất & trả góp</h3>
@@ -248,8 +268,9 @@
         </div>
         <div class="bg-white rounded-2xl shadow p-5 border border-slate-100">
           <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+            <!-- icon -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-6 w-6" aria-hidden="true">
-              <path d="M12 3.75V20.25M2.25 12H21.75M6.375 17.25C9.06739 17.25 11.25 15.0674 11.25 12.375V12M17.625 17.25C14.9326 17.25 12.75 15.0674 12.75 12.375V12M3.75 20.25H20.25C21.0784 20.25 21.75 19.5784 21.75 18.75V5.25C21.75 4.42157 21.0784 3.75 20.25 3.75H3.75C2.92157 3.75 2.25 4.42157 2.25 5.25V18.75C2.25 19.5784 2.92157 20.25 3.75 20.25ZM16.3713 10.8107C14.9623 12.2197 12.1286 11.8714 12.1286 11.8714C12.1286 11.8714 11.7803 9.03772 13.1893 7.62871C14.068 6.75003 15.4926 6.75003 16.3713 7.62871C17.2499 8.50739 17.2499 9.93201 16.3713 10.8107ZM10.773 7.62874C12.182 9.03775 11.8336 11.8714 11.8336 11.8714C11.8336 11.8714 9 12.2197 7.59099 10.8107C6.71231 9.93204 6.71231 8.50742 7.59099 7.62874C8.46967 6.75006 9.89429 6.75006 10.773 7.62874Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 3.75V20.25M2.25 12H21.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <h3 class="mt-4 font-semibold">Tặng phụ kiện chính hãng</h3>
@@ -257,8 +278,9 @@
         </div>
         <div class="bg-white rounded-2xl shadow p-5 border border-slate-100">
           <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+            <!-- icon -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-6 w-6" aria-hidden="true">
-              <path d="M7.5 21L3 16.5M3 16.5L7.5 12M3 16.5H16.5M16.5 3L21 7.5M21 7.5L16.5 12M21 7.5L7.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.5 21L3 16.5M3 16.5L7.5 12M3 16.5H16.5M16.5 3L21 7.5M21 7.5L16.5 12M21 7.5L7.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
           <h3 class="mt-4 font-semibold">Định giá xe cũ – đổi xe</h3>
@@ -276,9 +298,8 @@
         <li class="bg-white rounded-xl border border-slate-200 p-4">
           <div class="flex items-start gap-3">
             <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true">
-                <path d="M11.4194 15.1694L17.25 21C18.2855 22.0355 19.9645 22.0355 21 21C22.0355 19.9645 22.0355 18.2855 21 17.25L15.1233 11.3733M11.4194 15.1694L13.9155 12.1383C14.2315 11.7546 14.6542 11.5132 15.1233 11.3733M11.4194 15.1694L6.76432 20.8219C6.28037 21.4096 5.55897 21.75 4.79768 21.75C3.39064 21.75 2.25 20.6094 2.25 19.2023C2.25 18.441 2.59044 17.7196 3.1781 17.2357L10.0146 11.6056M15.1233 11.3733C15.6727 11.2094 16.2858 11.1848 16.8659 11.2338C16.9925 11.2445 17.1206 11.25 17.25 11.25C19.7353 11.25 21.75 9.23528 21.75 6.75C21.75 6.08973 21.6078 5.46268 21.3523 4.89779L18.0762 8.17397C16.9605 7.91785 16.0823 7.03963 15.8262 5.92397L19.1024 2.64774C18.5375 2.39223 17.9103 2.25 17.25 2.25C14.7647 2.25 12.75 4.26472 12.75 6.75C12.75 6.87938 12.7555 7.00749 12.7662 7.13411C12.8571 8.20956 12.6948 9.39841 11.8617 10.0845L11.7596 10.1686M10.0146 11.6056L5.90901 7.5H4.5L2.25 3.75L3.75 2.25L7.5 4.5V5.90901L11.7596 10.1686M10.0146 11.6056L11.7596 10.1686M18.375 18.375L15.75 15.75M4.86723 19.125H4.87473V19.1325H4.86723V19.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <!-- icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg>
             </span>
             <span>Bảo dưỡng – sửa chữa chính hãng</span>
           </div>
@@ -286,10 +307,8 @@
         <li class="bg-white rounded-xl border border-slate-200 p-4">
           <div class="flex items-start gap-3">
             <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true">
-                <path d="M9.59356 3.94014C9.68397 3.39768 10.1533 3.00009 10.7033 3.00009H13.2972C13.8472 3.00009 14.3165 3.39768 14.4069 3.94014L14.6204 5.22119C14.6828 5.59523 14.9327 5.9068 15.2645 6.09045C15.3387 6.13151 15.412 6.17393 15.4844 6.21766C15.8095 6.41393 16.2048 6.47495 16.5604 6.34175L17.7772 5.88587C18.2922 5.69293 18.8712 5.9006 19.1462 6.37687L20.4432 8.6233C20.7181 9.09957 20.6085 9.70482 20.1839 10.0544L19.1795 10.8812C18.887 11.122 18.742 11.4938 18.7491 11.8726C18.7498 11.915 18.7502 11.9575 18.7502 12.0001C18.7502 12.0427 18.7498 12.0852 18.7491 12.1275C18.742 12.5064 18.887 12.8782 19.1795 13.119L20.1839 13.9458C20.6085 14.2953 20.7181 14.9006 20.4432 15.3769L19.1462 17.6233C18.8712 18.0996 18.2922 18.3072 17.7772 18.1143L16.5604 17.6584C16.2048 17.5252 15.8095 17.5862 15.4844 17.7825C15.412 17.8263 15.3387 17.8687 15.2645 17.9097C14.9327 18.0934 14.6828 18.4049 14.6204 18.779L14.4069 20.06C14.3165 20.6025 13.8472 21.0001 13.2972 21.0001H10.7033C10.1533 21.0001 9.68397 20.6025 9.59356 20.06L9.38005 18.779C9.31771 18.4049 9.06774 18.0934 8.73597 17.9097C8.66179 17.8687 8.58847 17.8263 8.51604 17.7825C8.19101 17.5863 7.79568 17.5252 7.44011 17.6584L6.22325 18.1143C5.70826 18.3072 5.12926 18.0996 4.85429 17.6233L3.55731 15.3769C3.28234 14.9006 3.39199 14.2954 3.81657 13.9458L4.82092 13.119C5.11343 12.8782 5.25843 12.5064 5.25141 12.1276C5.25063 12.0852 5.25023 12.0427 5.25023 12.0001C5.25023 11.9575 5.25063 11.915 5.25141 11.8726C5.25843 11.4938 5.11343 11.122 4.82092 10.8812L3.81657 10.0544C3.39199 9.70484 3.28234 9.09958 3.55731 8.62332L4.85429 6.37688C5.12926 5.90061 5.70825 5.69295 6.22325 5.88588L7.4401 6.34176C7.79566 6.47496 8.19099 6.41394 8.51603 6.21767C8.58846 6.17393 8.66179 6.13151 8.73597 6.09045C9.06774 5.9068 9.31771 5.59523 9.38005 5.22119L9.59356 3.94014Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3432 10.3431 9.00001 12 9.00001C13.6569 9.00001 15 10.3432 15 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <!-- icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
             </span>
             <span>Phụ tùng Ford chính hãng</span>
           </div>
@@ -297,44 +316,10 @@
         <li class="bg-white rounded-xl border border-slate-200 p-4">
           <div class="flex items-start gap-3">
             <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true">
-                <path d="M16.7124 4.3299C17.2999 4.69153 17.8548 5.12691 18.364 5.63604C18.8731 6.14517 19.3085 6.70012 19.6701 7.28763M16.7124 4.3299L13.2636 8.46838M16.7124 4.3299C13.8316 2.5567 10.1684 2.5567 7.28763 4.3299M19.6701 7.28763L15.5316 10.7364M19.6701 7.28763C21.4433 10.1684 21.4433 13.8316 19.6701 16.7124M15.5316 10.7364C15.3507 10.2297 15.0574 9.75408 14.6517 9.34835C14.2459 8.94262 13.7703 8.6493 13.2636 8.46838M15.5316 10.7364C15.8228 11.5519 15.8228 12.4481 15.5316 13.2636M13.2636 8.46838C12.4481 8.17721 11.5519 8.17721 10.7364 8.46838M15.5316 13.2636C15.3507 13.7703 15.0574 14.2459 14.6517 14.6517C14.2459 15.0574 13.7703 15.3507 13.2636 15.5316M15.5316 13.2636L19.6701 16.7124M19.6701 16.7124C19.3085 17.2999 18.8731 17.8548 18.364 18.364C17.8548 18.8731 17.2999 19.3085 16.7124 19.6701M16.7124 19.6701L13.2636 15.5316M16.7124 19.6701C13.8316 21.4433 10.1684 21.4433 7.28763 19.6701M13.2636 15.5316C12.4481 15.8228 11.5519 15.8228 10.7364 15.5316M10.7364 15.5316C10.2297 15.3507 9.75408 15.0574 9.34835 14.6517C8.94262 14.2459 8.6493 13.7703 8.46838 13.2636M10.7364 15.5316L7.28763 19.6701M7.28763 19.6701C6.70012 19.3085 6.14517 18.8731 5.63604 18.364C5.12691 17.8548 4.69153 17.2999 4.3299 16.7124M4.3299 16.7124L8.46838 13.2636M4.3299 16.7124C2.5567 13.8316 2.5567 10.1684 4.3299 7.28763M8.46838 13.2636C8.17721 12.4481 8.17721 11.5519 8.46838 10.7364M8.46838 10.7364C8.6493 10.2297 8.94262 9.75408 9.34835 9.34835C9.75408 8.94262 10.2297 8.6493 10.7364 8.46838M8.46838 10.7364L4.3299 7.28763M10.7364 8.46838L7.28763 4.3299M7.28763 4.3299C6.70012 4.69153 6.14517 5.12691 5.63604 5.63604C5.12691 6.14517 4.69153 6.70013 4.3299 7.28763" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <!-- icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </span>
-            <span>Cứu hộ &amp; cứu trợ khẩn cấp</span>
-          </div>
-        </li>
-        <li class="bg-white rounded-xl border border-slate-200 p-4">
-          <div class="flex items-start gap-3">
-            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true">
-                <path d="M9.8132 15.9038L9 18.75L8.1868 15.9038C7.75968 14.4089 6.59112 13.2403 5.09619 12.8132L2.25 12L5.09619 11.1868C6.59113 10.7597 7.75968 9.59112 8.1868 8.09619L9 5.25L9.8132 8.09619C10.2403 9.59113 11.4089 10.7597 12.9038 11.1868L15.75 12L12.9038 12.8132C11.4089 13.2403 10.2403 14.4089 9.8132 15.9038Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M18.2589 8.71454L18 9.75L17.7411 8.71454C17.4388 7.50533 16.4947 6.56117 15.2855 6.25887L14.25 6L15.2855 5.74113C16.4947 5.43883 17.4388 4.49467 17.7411 3.28546L18 2.25L18.2589 3.28546C18.5612 4.49467 19.5053 5.43883 20.7145 5.74113L21.75 6L20.7145 6.25887C19.5053 6.56117 18.5612 7.50533 18.2589 8.71454Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M16.8942 20.5673L16.5 21.75L16.1058 20.5673C15.8818 19.8954 15.3546 19.3682 14.6827 19.1442L13.5 18.75L14.6827 18.3558C15.3546 18.1318 15.8818 17.6046 16.1058 16.9327L16.5 15.75L16.8942 16.9327C17.1182 17.6046 17.6454 18.1318 18.3173 18.3558L19.5 18.75L18.3173 19.1442C17.6454 19.3682 17.1182 19.8954 16.8942 20.5673Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
-            <span>Chăm sóc, vệ sinh xe</span>
-          </div>
-        </li>
-        <li class="bg-white rounded-xl border border-slate-200 p-4">
-          <div class="flex items-start gap-3">
-            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true">
-                <path d="M9 12.7498L11.25 14.9998L15 9.74985M12 2.71411C9.8495 4.75073 6.94563 5.99986 3.75 5.99986C3.69922 5.99986 3.64852 5.99955 3.59789 5.99892C3.2099 7.17903 3 8.43995 3 9.74991C3 15.3414 6.82432 20.0397 12 21.3719C17.1757 20.0397 21 15.3414 21 9.74991C21 8.43995 20.7901 7.17903 20.4021 5.99892C20.3515 5.99955 20.3008 5.99986 20.25 5.99986C17.0544 5.99986 14.1505 4.75073 12 2.71411Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
-            <span>Tư vấn bảo hiểm, đăng ký – đăng kiểm</span>
-          </div>
-        </li>
-        <li class="bg-white rounded-xl border border-slate-200 p-4">
-          <div class="flex items-start gap-3">
-            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="h-5 w-5" aria-hidden="true">
-                <path d="M15 10.5C15 12.1569 13.6569 13.5 12 13.5C10.3431 13.5 9 12.1569 9 10.5C9 8.84315 10.3431 7.5 12 7.5C13.6569 7.5 15 8.84315 15 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M19.5 10.5C19.5 17.6421 12 21.75 12 21.75C12 21.75 4.5 17.6421 4.5 10.5C4.5 6.35786 7.85786 3 12 3C16.1421 3 19.5 6.35786 19.5 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
-            <span>Lái thử tại nhà/khu vực gần bạn</span>
+            <span>Cứu hộ – hỗ trợ khẩn cấp</span>
           </div>
         </li>
       </ul>
@@ -342,203 +327,199 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="py-16 bg-gradient-to-b from-white to-slate-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="text-2xl sm:text-3xl font-bold">Ngô Anh Khôi – Người đại diện bạn có thể tin</h2>
-        <p class="mt-3 text-slate-700">Khôi là tư vấn bán hàng tại Saigon Ford, cam kết minh bạch về giá, thủ tục rõ ràng, hỗ trợ nhanh và tận tâm sau bán. Mục tiêu không chỉ là bán xe, mà là đồng hành lâu dài cùng bạn và gia đình trên mọi hành trình.</p>
-        <ul class="mt-4 space-y-2 text-sm text-slate-700">
-          <li>• Phản hồi trong 15 phút trong giờ làm việc</li>
-          <li>• Hỗ trợ hồ sơ trả góp, bảo hiểm, đăng ký lăn bánh</li>
-          <li>• Lịch lái thử linh hoạt tại HCM & vùng lân cận</li>
-        </ul>
-      </div>
-      <div class="bg-white rounded-2xl shadow p-6 border border-slate-100 space-y-4">
-        <div class="flex items-center gap-4">
-          <img src="avatarAK.png" alt="Ngô Anh Khôi" class="h-16 w-16 rounded-full object-cover" />
-          <div>
-            <h3 class="font-semibold text-lg">Ngô Anh Khôi</h3>
-            <p class="text-sm text-slate-600">Đại diện kinh doanh – Saigon Ford</p>
-          </div>
-        </div>
-        <dl class="mt-4 text-sm text-slate-700 grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <dt class="text-slate-500">Điện thoại</dt>
-            <dd class="font-medium"><a href="tel:+84938793333" class="hover:underline">+84 938 79 3333</a></dd>
-          </div>
-          <div>
-            <dt class="text-slate-500">Zalo</dt>
-            <dd class="font-medium"><a href="https://zalo.me/0938793333" class="hover:underline">zalo.me/0938793333</a></dd>
-          </div>
-          <div>
-            <dt class="text-slate-500">Email</dt>
-            <dd class="font-medium"><a href="mailto:ngoanhkhoi0909@gmail.com" class="hover:underline">ngoanhkhoi0909@gmail.com</a></dd>
-          </div>
-          <div>
-            <dt class="text-slate-500">Facebook</dt>
-            <dd class="font-medium"><a href="https://www.facebook.com/anhkhoi0909" class="hover:underline">facebook.com/anhkhoi0909</a></dd>
-          </div>
-        </dl>
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Về Saigon Ford & Ngô Anh Khôi</h2>
+      <p class="text-slate-700 max-w-3xl">
+        Saigon Ford là đại lý ủy quyền chính hãng của Ford tại Việt Nam. Khôi cam kết tư vấn minh bạch, nhanh chóng và đồng hành cùng khách hàng từ lúc chọn xe đến khi bàn giao và hậu mãi.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="tel:+84938793333" class="inline-flex items-center rounded-xl border border-blue-600 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-50">Gọi Khôi: 0938 79 3333</a>
+        <a href="https://zalo.me/0938793333" target="_blank" rel="noopener" class="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">Chat Zalo</a>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT (Leads form) -->
   <section id="contact" class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-8">
-        <div>
-          <h2 class="text-2xl sm:text-3xl font-bold">Liên hệ & Đăng ký lái thử</h2>
-          <p class="mt-2 text-slate-600">Điền form, Khôi sẽ gọi lại trong giờ làm việc.</p>
-
-          <form
-            id="contact-form"
-            class="mt-6 bg-white rounded-2xl p-6 shadow border border-slate-100"
-            name="contact"
-            method="POST"
-            action="https://script.google.com/macros/s/AKfycbz_Ma4frIpLslEbvTpbAENjIRPOnIgFtXRCPgsX3rbnbVKCJor6adKG7Zd9xaHWuyNrYg/exec"
-          >
-            <div class="grid sm:grid-cols-2 gap-4">
-              <label class="block text-sm">Họ tên
-                <input type="text" name="name" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600" />
-              </label>
-              <label class="block text-sm">Điện thoại
-                <input type="tel" name="phone" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600" />
-              </label>
-              <label class="block text-sm sm:col-span-2">Dòng xe quan tâm
-                <input type="text" name="model" class="mt-1 w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600" />
-              </label>
-              <label class="block text-sm sm:col-span-2">Ghi chú
-                <textarea name="message" rows="4" class="mt-1 w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600"></textarea>
-              </label>
-            </div>
-            <button type="submit" class="mt-4 inline-flex items-center rounded-xl bg-blue-600 px-4 py-2.5 text-white font-semibold hover:bg-blue-700">Gửi yêu cầu</button>
-          </form>
-
-          <div id="form-status" class="mt-4 hidden">
-            <div
-              id="form-status-content"
-              class="flex items-start gap-3 rounded-xl border bg-blue-50 border-blue-200 p-4 text-sm text-blue-700"
-              role="status"
-            >
-              <div id="form-status-message" class="flex-1" aria-live="polite"></div>
-              <button
-                type="button"
-                id="form-status-dismiss"
-                class="ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full border border-transparent text-base font-semibold text-blue-700 hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600"
-                aria-label="Đóng thông báo"
-              >
-                &times;
-              </button>
-            </div>
-          </div>
-
-          <div class="mt-6 text-sm text-slate-600 space-y-3">
-            <p><strong>Hotline:</strong> <a href="tel:+84938793333" class="text-blue-700 hover:underline">+84 938 79 3333</a></p>
-            <div>
-              <p class="font-semibold text-slate-700">Địa chỉ showroom</p>
-              <ul class="mt-2 space-y-1">
-                <li>🚘 Sài Gòn Ford Assured - Trung Tâm Xe Đã Qua Sử Dụng Chính Hãng</li>
-                <li>📍 Sài Gòn Ford Cao Thắng - 61A Cao Thắng, Phường 3, Quận 3, HCM</li>
-                <li>📍 Sài Gòn Ford Nam Sài Gòn - 161F Dạ Nam, Phường 3, Quận 8, HCM</li>
-                <li>📍 Sài Gòn Ford Phổ Quang - 104 Phổ Quang, Phường 2, Quận Tân Bình, HCM</li>
-              </ul>
-            </div>
-            <p><strong>Giờ làm việc:</strong> 8:00 – 18:00 (T2–T7)</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-2xl overflow-hidden shadow border border-slate-100 min-h-[320px]">
-          <!-- Google Map -->
-          <iframe class="w-full h-full min-h-[320px]" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2185725205026!2d106.69273657593353!3d10.795708558821024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e439e78c45%3A0x6889d384d08632c9!2sFord%20Saigon!5e0!3m2!1svi!2svi!4v1714986000000"></iframe>
-        </div>
+      <div class="mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold">Liên hệ / Nhận báo giá</h2>
+        <p class="text-slate-600 mt-2">Điền thông tin, Khôi sẽ gọi lại tư vấn nhanh trong giờ làm việc.</p>
       </div>
+
+      <form id="lead-form" class="grid gap-4 sm:grid-cols-2 bg-white rounded-2xl border border-slate-200 p-5 shadow">
+        <div class="sm:col-span-1">
+          <label for="name" class="block text-sm font-medium text-slate-700">Họ và tên *</label>
+          <input id="name" name="name" type="text" required minlength="2" autocomplete="name" class="mt-1 block w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600" placeholder="Nguyễn Văn A" />
+        </div>
+
+        <div class="sm:col-span-1">
+          <label for="phone" class="block text-sm font-medium text-slate-700">Số điện thoại *</label>
+          <input id="phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" class="mt-1 block w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600" placeholder="0938 79 3333" />
+        </div>
+
+        <div class="sm:col-span-1">
+          <label for="model" class="block text-sm font-medium text-slate-700">Dòng xe quan tâm</label>
+          <select id="model" name="model" class="mt-1 block w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600">
+            <option value="">Chưa chọn</option>
+            <option>Ford Ranger Raptor</option>
+            <option>Ford Everest Titanium+</option>
+            <option>Ford Territory Titanium</option>
+            <option>Khác</option>
+          </select>
+        </div>
+
+        <div class="sm:col-span-1">
+          <label for="message" class="block text-sm font-medium text-slate-700">Nội dung</label>
+          <input id="message" name="message" type="text" maxlength="200" class="mt-1 block w-full rounded-xl border-slate-300 focus:border-blue-600 focus:ring-blue-600" placeholder="Nhu cầu, ngân sách, thời gian dự định..." />
+        </div>
+
+        <div class="sm:col-span-2 flex items-center justify-between gap-3">
+          <p id="form-status" class="text-sm text-slate-600" aria-live="polite"></p>
+          <button id="submit-btn" type="submit" class="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2.5 text-white font-semibold hover:bg-blue-700 disabled:opacity-60 disabled:cursor-not-allowed">
+            Gửi yêu cầu
+          </button>
+        </div>
+      </form>
+
+      <noscript>
+        <p class="mt-3 text-sm text-rose-700">Trình duyệt của bạn đang tắt JavaScript. Vui lòng gọi Khôi: 0938 79 3333 hoặc nhắn Zalo: 0938 79 3333 để được hỗ trợ.</p>
+      </noscript>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-10 border-t border-slate-200 bg-white">
+  <footer class="border-t border-slate-200 py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600">
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <p>© <span id="y"></span> Saigon Ford. Đại lý Ford chính hãng. Đại diện: Ngô Anh Khôi.</p>
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <p>© <span id="year"></span> Saigon Ford — Đại diện: Ngô Anh Khôi</p>
         <div class="flex items-center gap-4">
-          <a href="#" class="hover:text-slate-900">Chính sách bảo mật</a>
-          <a href="#" class="hover:text-slate-900">Điều khoản</a>
+          <a href="tel:+84938793333" class="hover:text-blue-700">Gọi Khôi</a>
+          <a href="https://zalo.me/0938793333" target="_blank" rel="noopener" class="hover:text-blue-700">Zalo</a>
+          <a href="#contact" class="hover:text-blue-700">Nhận báo giá</a>
         </div>
       </div>
-      <p class="mt-3 text-xs text-slate-500">Lưu ý về thương hiệu: Tên và logo “Ford” là tài sản của Ford Motor Company. Trang này sử dụng nhằm mục đích giới thiệu hoạt động kinh doanh của đại lý/đại diện và tuân thủ các hướng dẫn thương hiệu hiện hành.</p>
     </div>
   </footer>
 
+  <!-- App Script + UX Logic -->
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-    const navToggle = document.getElementById('nav-toggle');
+    // URL Apps Script đang hoạt động:
+    const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby-FuNgq4m7lsfdB3WrVKmW4O2Hki-xLVZObphvYKpSikYQ2ufnKuXRxrb1rLRErdujBQ/exec';
+
+    // Toggle mobile menu
+    const toggleBtn = document.getElementById('nav-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-    if (navToggle && mobileMenu) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('hidden');
-        navToggle.setAttribute('aria-expanded', String(!isOpen));
-      });
-      mobileMenu.querySelectorAll('a').forEach((link) =>
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          navToggle.setAttribute('aria-expanded', 'false');
-        })
-      );
-    }
-    const form = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
-    const formStatusMessage = document.getElementById('form-status-message');
-    const formStatusDismiss = document.getElementById('form-status-dismiss');
-    const formStatusContent = document.getElementById('form-status-content');
-
-    const statusStyles = {
-      loading: ['border-blue-200', 'bg-blue-50', 'text-blue-700'],
-      success: ['border-green-200', 'bg-green-50', 'text-green-700'],
-      error: ['border-red-200', 'bg-red-50', 'text-red-700'],
-    };
-
-    const resetStatusStyles = () => {
-      if (!formStatusContent) return;
-      Object.values(statusStyles).forEach((classes) => {
-        classes.forEach((className) => formStatusContent.classList.remove(className));
-      });
-    };
-
-    const showStatus = (type, message) => {
-      if (!formStatus || !formStatusMessage || !formStatusContent) return;
-      resetStatusStyles();
-      (statusStyles[type] || []).forEach((className) => formStatusContent.classList.add(className));
-      formStatusMessage.textContent = message;
-      formStatus.classList.remove('hidden');
-    };
-
-    if (formStatusDismiss) {
-      formStatusDismiss.addEventListener('click', () => {
-        formStatus.classList.add('hidden');
+    if (toggleBtn && mobileMenu) {
+      toggleBtn.addEventListener('click', () => {
+        const hidden = mobileMenu.classList.toggle('hidden');
+        toggleBtn.setAttribute('aria-expanded', String(!hidden));
       });
     }
 
-    if (form && formStatus && formStatusMessage && formStatusContent) {
-      form.addEventListener('submit', async (event) => {
-        event.preventDefault();
-        showStatus('loading', 'Đang gửi thông tin...');
+    // Prefill model from cards
+    document.querySelectorAll('[data-model]').forEach(el => {
+      el.addEventListener('click', () => {
+        const m = el.getAttribute('data-model') || '';
+        const select = document.getElementById('model');
+        if (select) {
+          const found = Array.from(select.options).some(o => o.value === m);
+          select.value = found ? m : '';
+        }
+      });
+    });
 
-        const formData = new FormData(form);
-        formData.append('created_at', new Date().toISOString());
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Simple VN phone validation
+    function isValidVNPhone(raw) {
+      const digits = (raw || '').replace(/\D+/g, '');
+      if (digits.startsWith('84')) {
+        return digits.length >= 11 && digits.length <= 12; // 84 + 9~10 digits
+      }
+      return digits.length >= 9 && digits.length <= 11; // 09.. / 03.. / 05.. / 07.. / 08..
+    }
+
+    // Submit lead form
+    const form = document.getElementById('lead-form');
+    const statusEl = document.getElementById('form-status');
+    const submitBtn = document.getElementById('submit-btn');
+
+    function setStatus(msg, ok=false) {
+      if (!statusEl) return;
+      statusEl.textContent = msg || '';
+      statusEl.className = 'text-sm ' + (ok ? 'text-emerald-700' : 'text-slate-600');
+    }
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+        const payload = {
+          name: (fd.get('name') || '').toString().trim(),
+          phone: (fd.get('phone') || '').toString().trim(),
+          model: (fd.get('model') || '').toString().trim(),
+          message: (fd.get('message') || '').toString().trim()
+        };
+
+        if (!payload.name || !payload.phone) {
+          setStatus('Vui lòng nhập Họ tên và Số điện thoại.');
+          return;
+        }
+        if (!isValidVNPhone(payload.phone)) {
+          setStatus('Số điện thoại chưa đúng định dạng Việt Nam.');
+          return;
+        }
+
+        submitBtn && (submitBtn.disabled = true);
+        setStatus('Đang gửi yêu cầu...');
 
         try {
-          await fetch(form.action, {
+          const res = await fetch(APP_SCRIPT_URL, {
             method: 'POST',
-            mode: 'no-cors',
-            body: formData,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
           });
 
-          showStatus('success', 'Gửi thành công! Khôi sẽ liên hệ với bạn sớm.');
+          if (res.ok) {
+            try {
+              const j = await res.json();
+              if (j && j.success) {
+                setStatus('Đã gửi thành công. Khôi sẽ liên hệ sớm!', true);
+              } else {
+                setStatus('Gửi xong nhưng phản hồi không như mong đợi. Khôi sẽ kiểm tra thủ công.', true);
+              }
+            } catch {
+              setStatus('Đã gửi thành công (không đọc được phản hồi). Khôi sẽ liên hệ sớm!', true);
+            }
+          } else {
+            // Fallback no-cors
+            await fetch(APP_SCRIPT_URL, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+            setStatus('Đã gửi yêu cầu (chế độ dự phòng). Khôi sẽ liên hệ sớm!', true);
+          }
+
+          if (typeof gtag === 'function') {
+            gtag('event', 'lead_submit', {
+              event_category: 'engagement',
+              method: 'web_form',
+              model: payload.model || '(unset)'
+            });
+          }
+
           form.reset();
-        } catch (error) {
-          showStatus('error', 'Không thể gửi thông tin, vui lòng kiểm tra kết nối và thử lại.');
-          console.error('Submit error:', error);
+        } catch (err) {
+          console.error(err);
+          setStatus('Không gửi được. Vui lòng gọi/Zalo 0938 79 3333 giúp Khôi nhé.');
+        } finally {
+          submitBtn && (submitBtn.disabled = false);
         }
       });
     }
