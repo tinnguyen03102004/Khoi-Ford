@@ -93,7 +93,7 @@ function gtag_report_conversion(url) {
         </button>
 
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="#models" class="hover:text-blue-700">Dòng xe</a>
+          <a href="#products" class="hover:text-blue-700">Sản phẩm</a>
           <a href="#offers" class="hover:text-blue-700">Ưu đãi</a>
           <a href="#services" class="hover:text-blue-700">Dịch vụ</a>
           <a href="#about" class="hover:text-blue-700">Về chúng tôi</a>
@@ -110,7 +110,7 @@ function gtag_report_conversion(url) {
       <!-- Mobile menu -->
       <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200">
         <nav class="py-3 space-y-2 text-sm font-medium">
-          <a href="#models" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Dòng xe</a>
+          <a href="#products" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Sản phẩm</a>
           <a href="#offers" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Ưu đãi</a>
           <a href="#services" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Dịch vụ</a>
           <a href="#about" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Về chúng tôi</a>
@@ -137,7 +137,7 @@ function gtag_report_conversion(url) {
           Tư vấn minh bạch – báo giá nhanh – hỗ trợ lái thử và thủ tục trả góp. Hãy để Khôi giúp bạn chọn chiếc Ford phù hợp nhất.
         </p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#models" class="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2.5 text-white font-semibold hover:bg-blue-700">Xem dòng xe</a>
+          <a href="#products" class="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2.5 text-white font-semibold hover:bg-blue-700">Xem sản phẩm</a>
           <a href="#contact" class="inline-flex items-center rounded-xl border border-slate-300 px-4 py-2.5 text-slate-700 font-medium hover:bg-slate-100">Nhận tư vấn 1-1</a>
         </div>
 
@@ -165,56 +165,174 @@ function gtag_report_conversion(url) {
     </div>
   </section>
 
-  <!-- MODELS -->
-  <section id="models" class="py-16">
+  <!-- PRODUCTS -->
+  <section id="products" class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-end justify-between mb-8">
-        <h2 class="text-2xl sm:text-3xl font-bold">Dòng xe Ford bán chạy</h2>
-        <a href="#contact" class="text-sm font-medium text-blue-700 hover:underline">Hỏi giá ngay →</a>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between mb-10">
+        <div>
+          <p class="text-xs uppercase tracking-wider text-blue-600">Danh mục nổi bật</p>
+          <h2 class="text-2xl sm:text-3xl font-bold">Sản phẩm Ford</h2>
+        </div>
+        <a href="#contact" class="inline-flex items-center rounded-xl border border-blue-600 px-4 py-2 text-sm font-semibold text-blue-700 hover:bg-blue-50">Nhận tư vấn chi tiết →</a>
       </div>
 
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Card: Ranger Raptor -->
-        <article class="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+      <div class="flex flex-wrap items-center gap-3 text-sm font-semibold mb-8">
+        <button type="button" data-filter="all" class="product-tab inline-flex items-center rounded-xl border px-4 py-2 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 bg-blue-600 text-white border-blue-600 shadow" aria-pressed="true">Tất cả</button>
+        <button type="button" data-filter="suv" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">SUV</button>
+        <button type="button" data-filter="thuong-mai" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">Thương mại</button>
+        <button type="button" data-filter="tuong-lai" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">Xe tương lai</button>
+      </div>
+
+      <div id="product-grid" class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        <article data-category="suv" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
           <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="showroom/raptor.png" alt="Ford Ranger Raptor" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img src="showroom/territory.png" alt="Ford Territory Sport 1.5L AT" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
           </figure>
-          <h3 class="mt-4 text-lg font-semibold">Ford Ranger Raptor</h3>
-          <p class="mt-1 text-sm text-slate-600">Bán tải hiệu năng cao với động cơ Bi-Turbo, hệ treo FOX êm ái cho mọi địa hình.</p>
-          <div class="mt-4 flex items-center justify-between text-sm">
-            <span class="font-semibold text-slate-800">Từ 1,299 tỷ đồng</span>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>SUV</span>
+            <span>2024</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Territory Sport 1.5L AT</h3>
+          <p class="mt-1 text-sm text-slate-600">Crossover 5 chỗ linh hoạt, trang bị gói an toàn Co-Pilot360 cho gia đình đô thị.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ 1.5L EcoBoost, tiết kiệm</li>
+            <li>• Màn hình kép 12&quot; kết nối Apple CarPlay</li>
+            <li>• Hỗ trợ đỗ xe tự động</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá từ 869.000.000₫</span>
             <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
           </div>
         </article>
 
-        <!-- Card: Everest Titanium+ -->
-        <article class="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+        <article data-category="suv" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
           <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="showroom/everest.png" alt="Ford Everest Titanium" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img src="showroom/everest.png" alt="Ford Everest Platinum 2.0L 4x4 AT" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
           </figure>
-          <h3 class="mt-4 text-lg font-semibold">Ford Everest Titanium+</h3>
-          <p class="mt-1 text-sm text-slate-600">SUV 7 chỗ cao cấp – công nghệ an toàn Co-Pilot360, nội thất sang trọng cho gia đình.</p>
-          <div class="mt-4 flex items-center justify-between text-sm">
-            <span class="font-semibold text-slate-800">Từ 1,468 tỷ đồng</span>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>SUV 7 chỗ</span>
+            <span>2024</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Everest Platinum 2.0L 4x4 AT</h3>
+          <p class="mt-1 text-sm text-slate-600">SUV đỉnh cao với hệ dẫn động 4 bánh, khoang nội thất sang trọng và ẩm thanh B&amp;O.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ Bi-Turbo 2.0L mạnh mẽ</li>
+            <li>• 7 chế độ địa hình thông minh</li>
+            <li>• Trợ lái Co-Pilot360 thế hệ mới</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá từ 1.545.000.000₫</span>
             <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn lăn bánh</a>
           </div>
         </article>
 
-        <!-- Card: Territory Titanium -->
-        <article class="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+        <article data-category="suv" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
           <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="showroom/territory.png" alt="Ford Territory Titanium" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img src="background/3.png" alt="Ford Explorer Limited 2.3L EcoBoost" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
           </figure>
-          <h3 class="mt-4 text-lg font-semibold">Ford Territory Titanium</h3>
-          <p class="mt-1 text-sm text-slate-600">Crossover đô thị hiện đại – màn hình đôi 12&quot;, gói an toàn thông minh, tiết kiệm nhiên liệu.</p>
-          <div class="mt-4 flex items-center justify-between text-sm">
-            <span class="font-semibold text-slate-800">Từ 840 triệu đồng</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt lịch lái thử</a>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>SUV hạng E</span>
+            <span>2024</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Explorer Limited 2.3L EcoBoost</h3>
+          <p class="mt-1 text-sm text-slate-600">Xe 7 chỗ nhập khẩu Mỹ với khả năng vận hành mạnh mẽ, tiện nghi cao cấp cho doanh nhân.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ 2.3L EcoBoost 301 mã lực</li>
+            <li>• Ghế da chỉnh điện, sưởi &amp; làm mát</li>
+            <li>• Hệ thống an toàn 10 túi khí</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá từ 2.439.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Giữ suất xe</a>
+          </div>
+        </article>
+
+        <article data-category="thuong-mai" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="showroom/raptor.png" alt="Ford Ranger Raptor 3.0L V6 Twin-Turbo" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Bán tải</span>
+            <span>2024</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Ranger Raptor 3.0L V6 Twin-Turbo</h3>
+          <p class="mt-1 text-sm text-slate-600">Bán tải hiệu năng cao, treo FOX thích ứng và chế độ Baja chinh phục mọi địa hình.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ V6 3.0L 392 mã lực</li>
+            <li>• 7 chế độ lái chuyên nghiệp</li>
+            <li>• Ống xả thể thao điều chỉnh âm</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá từ 1.299.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe ngay</a>
+          </div>
+        </article>
+
+        <article data-category="thuong-mai" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/1.png" alt="Ford Ranger Wildtrak 2.0L 4x4 AT" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Bán tải</span>
+            <span>2024</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Ranger Wildtrak 2.0L 4x4 AT</h3>
+          <p class="mt-1 text-sm text-slate-600">Bán tải đa dụng, nội thất tiện nghi và công nghệ hỗ trợ đỗ xe song song, vuông góc.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ Bi-Turbo 210 mã lực</li>
+            <li>• Thùng hàng đa dụng với ổ cắm 230V</li>
+            <li>• Camera 360 độ, cảm biến xung quanh</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá từ 1.138.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Xin báo giá</a>
+          </div>
+        </article>
+
+        <article data-category="tuong-lai" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/2.png" alt="Ford Mustang Mach-E GT Performance" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Xe điện</span>
+            <span>Đặt trước</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Mustang Mach-E GT Performance</h3>
+          <p class="mt-1 text-sm text-slate-600">Crossover thuần điện với thời gian tăng tốc 0-100 km/h chỉ 3,7s, phạm vi di chuyển đến 500 km.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Hai động cơ điện, AWD toàn thời gian</li>
+            <li>• Pin 98,7 kWh sạc nhanh DC 150 kW</li>
+            <li>• Màn hình trung tâm 15.5&quot; SYNC 4A</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá dự kiến 2.400.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đăng ký trải nghiệm</a>
+          </div>
+        </article>
+
+        <article data-category="tuong-lai" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/3.png" alt="Ford Explorer EV Concept" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Concept</span>
+            <span>Sắp ra mắt</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Explorer EV Concept</h3>
+          <p class="mt-1 text-sm text-slate-600">Phiên bản điện hóa của Explorer với thiết kế khí động học, tối ưu cho gia đình hiện đại.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Pin tầm xa 600 km (ước tính)</li>
+            <li>• Nội thất 3 hàng ghế cấu hình linh hoạt</li>
+            <li>• Hệ sinh thái FordPass năng lượng sạch</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá dự kiến cập nhật</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận thông tin sớm</a>
           </div>
         </article>
       </div>
 
-      <p class="mt-3 text-xs text-slate-500">*Giá lăn bánh ước tính tại TP.HCM (bao gồm VAT). Vui lòng liên hệ Khôi để cập nhật khuyến mại và chương trình trả góp.</p>
+      <p class="mt-4 text-xs text-slate-500">*Giá tham khảo (đã bao gồm VAT). Vui lòng liên hệ Ngô Anh Khôi để nhận khuyến mại và gói trả góp mới nhất.</p>
     </div>
   </section>
 
@@ -496,6 +614,51 @@ function gtag_report_conversion(url) {
         })
       );
     }
+    const filterButtons = document.querySelectorAll('.product-tab[data-filter]');
+    const productCards = document.querySelectorAll('.product-card[data-category]');
+
+    if (filterButtons.length && productCards.length) {
+      const setActiveButton = (activeButton) => {
+        const filter = activeButton.dataset.filter || 'all';
+
+        filterButtons.forEach((button) => {
+          const isActive = button === activeButton;
+          button.setAttribute('aria-pressed', String(isActive));
+          button.classList.toggle('bg-blue-600', isActive);
+          button.classList.toggle('text-white', isActive);
+          button.classList.toggle('border-blue-600', isActive);
+          button.classList.toggle('shadow', isActive);
+          button.classList.toggle('bg-white', !isActive);
+          button.classList.toggle('text-slate-600', !isActive);
+          button.classList.toggle('border-slate-200', !isActive);
+        });
+
+        productCards.forEach((card) => {
+          const categories = (card.dataset.category || '')
+            .split(',')
+            .map((item) => item.trim())
+            .filter(Boolean);
+
+          if (filter === 'all' || categories.includes(filter)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      };
+
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          if (button.getAttribute('aria-pressed') === 'true') {
+            return;
+          }
+          setActiveButton(button);
+        });
+      });
+
+      setActiveButton(filterButtons[0]);
+    }
+
     const form = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
 
