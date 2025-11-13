@@ -178,164 +178,563 @@ function gtag_report_conversion(url) {
 
       <div class="flex flex-wrap items-center gap-3 text-sm font-semibold mb-8">
         <button type="button" data-filter="all" class="product-tab inline-flex items-center rounded-xl border px-4 py-2 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 bg-blue-600 text-white border-blue-600 shadow" aria-pressed="true">Tất cả</button>
-        <button type="button" data-filter="suv" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">SUV</button>
-        <button type="button" data-filter="thuong-mai" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">Thương mại</button>
-        <button type="button" data-filter="tuong-lai" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">Xe tương lai</button>
+        <button type="button" data-filter="ranger" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">Ranger</button>
+        <button type="button" data-filter="everest" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">Everest NextGen</button>
+        <button type="button" data-filter="territory" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">Territory</button>
+        <button type="button" data-filter="transit" class="product-tab inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-slate-600 transition hover:border-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600" aria-pressed="false">Transit</button>
       </div>
 
       <div id="product-grid" class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-        <article data-category="suv" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
           <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="showroom/territory.png" alt="Ford Territory Sport 1.5L AT" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img src="background/Ranger XLS 6AT 4x2 LED.png" alt="Ford Ranger XLS 6AT 4x2 LED" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
           </figure>
           <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
-            <span>SUV</span>
-            <span>2024</span>
+            <span>Ranger</span>
+            <span>2025</span>
           </div>
-          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Territory Sport 1.5L AT</h3>
-          <p class="mt-1 text-sm text-slate-600">Crossover 5 chỗ linh hoạt, trang bị gói an toàn Co-Pilot360 cho gia đình đô thị.</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger XLS 6AT 4x2 LED</h3>
+          <p class="mt-1 text-sm text-slate-600">Bán tải 1 cầu tự động mới nhất, trang bị đèn LED tiêu chuẩn và tiện nghi hiện đại.</p>
           <ul class="mt-3 space-y-1 text-sm text-slate-500">
-            <li>• Động cơ 1.5L EcoBoost, tiết kiệm</li>
-            <li>• Màn hình kép 12&quot; kết nối Apple CarPlay</li>
-            <li>• Hỗ trợ đỗ xe tự động</li>
+            <li>• Động cơ diesel 2.0L 170 PS, mô-men xoắn 405 Nm</li>
+            <li>• Hộp số tự động 6 cấp kết hợp dẫn động 4x2</li>
+            <li>• Màn hình trung tâm SYNC 4 kích thước 10 inch</li>
           </ul>
           <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
-            <span class="text-base font-semibold text-slate-900">Giá từ 869.000.000₫</span>
+            <span class="text-base font-semibold text-slate-900">Giá công bố 707.000.000₫</span>
             <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
           </div>
         </article>
 
-        <article data-category="suv" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
           <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="showroom/everest.png" alt="Ford Everest Platinum 2.0L 4x4 AT" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img src="background/Ranger XLS 6AT 4x2 LED (Đỏ cam).png" alt="Ford Ranger XLS 6AT 4x2 LED Đỏ cam" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
           </figure>
           <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
-            <span>SUV 7 chỗ</span>
-            <span>2024</span>
+            <span>Ranger</span>
+            <span>2025</span>
           </div>
-          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Everest Platinum 2.0L 4x4 AT</h3>
-          <p class="mt-1 text-sm text-slate-600">SUV đỉnh cao với hệ dẫn động 4 bánh, khoang nội thất sang trọng và ẩm thanh B&amp;O.</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger XLS 6AT 4x2 LED (Đỏ cam)</h3>
+          <p class="mt-1 text-sm text-slate-600">Phiên bản màu Cyber Orange nổi bật, phù hợp khách hàng yêu phong cách thể thao.</p>
           <ul class="mt-3 space-y-1 text-sm text-slate-500">
-            <li>• Động cơ Bi-Turbo 2.0L mạnh mẽ</li>
-            <li>• 7 chế độ địa hình thông minh</li>
-            <li>• Trợ lái Co-Pilot360 thế hệ mới</li>
+            <li>• Trang bị đèn LED ma trận và dải định vị chữ C</li>
+            <li>• Cabin rộng rãi với ghế nỉ họa tiết mới</li>
+            <li>• Hệ thống hỗ trợ đổ đèo và gài cầu điện tử</li>
           </ul>
           <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
-            <span class="text-base font-semibold text-slate-900">Giá từ 1.545.000.000₫</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn lăn bánh</a>
-          </div>
-        </article>
-
-        <article data-category="suv" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
-          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="background/3.png" alt="Ford Explorer Limited 2.3L EcoBoost" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-          </figure>
-          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
-            <span>SUV hạng E</span>
-            <span>2024</span>
-          </div>
-          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Explorer Limited 2.3L EcoBoost</h3>
-          <p class="mt-1 text-sm text-slate-600">Xe 7 chỗ nhập khẩu Mỹ với khả năng vận hành mạnh mẽ, tiện nghi cao cấp cho doanh nhân.</p>
-          <ul class="mt-3 space-y-1 text-sm text-slate-500">
-            <li>• Động cơ 2.3L EcoBoost 301 mã lực</li>
-            <li>• Ghế da chỉnh điện, sưởi &amp; làm mát</li>
-            <li>• Hệ thống an toàn 10 túi khí</li>
-          </ul>
-          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
-            <span class="text-base font-semibold text-slate-900">Giá từ 2.439.000.000₫</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Giữ suất xe</a>
-          </div>
-        </article>
-
-        <article data-category="thuong-mai" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
-          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="showroom/raptor.png" alt="Ford Ranger Raptor 3.0L V6 Twin-Turbo" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-          </figure>
-          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
-            <span>Bán tải</span>
-            <span>2024</span>
-          </div>
-          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Ranger Raptor 3.0L V6 Twin-Turbo</h3>
-          <p class="mt-1 text-sm text-slate-600">Bán tải hiệu năng cao, treo FOX thích ứng và chế độ Baja chinh phục mọi địa hình.</p>
-          <ul class="mt-3 space-y-1 text-sm text-slate-500">
-            <li>• Động cơ V6 3.0L 392 mã lực</li>
-            <li>• 7 chế độ lái chuyên nghiệp</li>
-            <li>• Ống xả thể thao điều chỉnh âm</li>
-          </ul>
-          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
-            <span class="text-base font-semibold text-slate-900">Giá từ 1.299.000.000₫</span>
+            <span class="text-base font-semibold text-slate-900">Giá công bố 715.000.000₫</span>
             <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe ngay</a>
           </div>
         </article>
 
-        <article data-category="thuong-mai" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
           <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="background/1.png" alt="Ford Ranger Wildtrak 2.0L 4x4 AT" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img src="background/Ranger XLS 6AT 4x4 LED.png" alt="Ford Ranger XLS 6AT 4x4 LED" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
           </figure>
           <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
-            <span>Bán tải</span>
-            <span>2024</span>
+            <span>Ranger</span>
+            <span>2025</span>
           </div>
-          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Ranger Wildtrak 2.0L 4x4 AT</h3>
-          <p class="mt-1 text-sm text-slate-600">Bán tải đa dụng, nội thất tiện nghi và công nghệ hỗ trợ đỗ xe song song, vuông góc.</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger XLS 6AT 4x4 LED</h3>
+          <p class="mt-1 text-sm text-slate-600">Lựa chọn hai cầu cho khách hàng cần khả năng chinh phục địa hình đa dạng.</p>
           <ul class="mt-3 space-y-1 text-sm text-slate-500">
-            <li>• Động cơ Bi-Turbo 210 mã lực</li>
-            <li>• Thùng hàng đa dụng với ổ cắm 230V</li>
-            <li>• Camera 360 độ, cảm biến xung quanh</li>
+            <li>• Hệ dẫn động 4x4 với khóa vi sai cầu sau</li>
+            <li>• 6 chế độ lái địa hình với công tắc xoay</li>
+            <li>• Khả năng kéo 3.500 kg và tải thùng 1 tấn</li>
           </ul>
           <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
-            <span class="text-base font-semibold text-slate-900">Giá từ 1.138.000.000₫</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Xin báo giá</a>
+            <span class="text-base font-semibold text-slate-900">Giá công bố 776.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn chi tiết</a>
           </div>
         </article>
 
-        <article data-category="tuong-lai" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
           <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="background/2.png" alt="Ford Mustang Mach-E GT Performance" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img src="background/Ranger XLS 6AT 4x4 LED (Đỏ cam).png" alt="Ford Ranger XLS 6AT 4x4 LED Đỏ cam" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
           </figure>
           <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
-            <span>Xe điện</span>
-            <span>Đặt trước</span>
+            <span>Ranger</span>
+            <span>2025</span>
           </div>
-          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Mustang Mach-E GT Performance</h3>
-          <p class="mt-1 text-sm text-slate-600">Crossover thuần điện với thời gian tăng tốc 0-100 km/h chỉ 3,7s, phạm vi di chuyển đến 500 km.</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger XLS 6AT 4x4 LED (Đỏ cam)</h3>
+          <p class="mt-1 text-sm text-slate-600">Màu sơn đặc trưng giúp Ranger XLS 4x4 thêm phần cá tính và dễ nhận diện.</p>
           <ul class="mt-3 space-y-1 text-sm text-slate-500">
-            <li>• Hai động cơ điện, AWD toàn thời gian</li>
-            <li>• Pin 98,7 kWh sạc nhanh DC 150 kW</li>
-            <li>• Màn hình trung tâm 15.5&quot; SYNC 4A</li>
+            <li>• Đèn pha LED chống chói tự động</li>
+            <li>• Hệ thống kiểm soát xuống dốc và hỗ trợ khởi hành ngang dốc</li>
+            <li>• Màn hình kỹ thuật số 8 inch sau vô-lăng</li>
           </ul>
           <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
-            <span class="text-base font-semibold text-slate-900">Giá dự kiến 2.400.000.000₫</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đăng ký trải nghiệm</a>
+            <span class="text-base font-semibold text-slate-900">Giá công bố 784.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt lịch lái thử</a>
           </div>
         </article>
 
-        <article data-category="tuong-lai" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
           <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
-            <img src="background/3.png" alt="Ford Explorer EV Concept" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+            <img src="background/Ranger WT 4x4 10AT.png" alt="Ford Ranger Wildtrak 4x4 10AT" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
           </figure>
           <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
-            <span>Concept</span>
-            <span>Sắp ra mắt</span>
+            <span>Ranger</span>
+            <span>2025</span>
           </div>
-          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ford Explorer EV Concept</h3>
-          <p class="mt-1 text-sm text-slate-600">Phiên bản điện hóa của Explorer với thiết kế khí động học, tối ưu cho gia đình hiện đại.</p>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger WT 4x4 10AT</h3>
+          <p class="mt-1 text-sm text-slate-600">Wildtrak thế hệ mới với khoang nội thất da, phục vụ công việc lẫn gia đình.</p>
           <ul class="mt-3 space-y-1 text-sm text-slate-500">
-            <li>• Pin tầm xa 600 km (ước tính)</li>
-            <li>• Nội thất 3 hàng ghế cấu hình linh hoạt</li>
-            <li>• Hệ sinh thái FordPass năng lượng sạch</li>
+            <li>• Động cơ Bi-Turbo 2.0L 210 PS, mô-men 500 Nm</li>
+            <li>• Hộp số tự động 10 cấp chuyển số mượt</li>
+            <li>• Camera 360 độ và hỗ trợ đỗ xe chủ động</li>
           </ul>
           <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
-            <span class="text-base font-semibold text-slate-900">Giá dự kiến cập nhật</span>
-            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận thông tin sớm</a>
+            <span class="text-base font-semibold text-slate-900">Giá công bố 979.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn lăn bánh</a>
+          </div>
+        </article>
+
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Ranger WT 4x4 10AT (Vàng Lux Đỏ cam).png" alt="Ford Ranger Wildtrak 4x4 10AT màu đặc biệt" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Ranger</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger WT 4x4 10AT (Vàng Lux/Đỏ cam)</h3>
+          <p class="mt-1 text-sm text-slate-600">Phiên bản màu đặc biệt dành cho khách hàng yêu sự khác biệt và đẳng cấp.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Giá nóc thể thao và bậc lên xuống hợp kim</li>
+            <li>• Nội thất ghế da Miko Suede, chỉ khâu cam</li>
+            <li>• Gói an toàn Co-Pilot360 toàn diện</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 987.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe ngay</a>
+          </div>
+        </article>
+
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Ranger Raptor 4x4.png" alt="Ford Ranger Raptor 4x4" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Ranger</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger Raptor 4x4</h3>
+          <p class="mt-1 text-sm text-slate-600">Siêu bán tải hiệu năng cao dành cho người đam mê off-road tốc độ.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ EcoBoost V6 3.0L Twin-Turbo 397 PS</li>
+            <li>• Hệ thống treo FOX Live Valve thế hệ 3</li>
+            <li>• Chế độ Baja và ống xả điều chỉnh âm thanh</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.299.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Giữ suất xe</a>
+          </div>
+        </article>
+
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Ranger Raptor 4x4 (Đỏ cam Ghi xám).png" alt="Ford Ranger Raptor 4x4 màu đặc biệt" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Ranger</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger Raptor 4x4 (Đỏ cam/Ghi xám)</h3>
+          <p class="mt-1 text-sm text-slate-600">Tuỳ chọn màu sắc giới hạn, nổi bật cả trên phố lẫn cung đường địa hình.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Tem ngoại thất thể thao và mâm hợp kim 17"</li>
+            <li>• Nội thất ghế thể thao da/suede hai tông màu</li>
+            <li>• Hệ thống kiểm soát hành trình thích ứng</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.307.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe giới hạn</a>
+          </div>
+        </article>
+
+        <article data-category="ranger" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Ranger Stormtrak.png" alt="Ford Ranger Stormtrak" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Ranger</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Ranger Stormtrak</h3>
+          <p class="mt-1 text-sm text-slate-600">Phiên bản cao cấp phối màu đen đỏ cùng nắp thùng điện điều khiển từ xa.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ Bi-Turbo 2.0L kết hợp hộp số 10AT</li>
+            <li>• Nắp thùng cuộn điện tử E-Shifter tiện dụng</li>
+            <li>• Cửa gió hàng ghế sau, sạc không dây chuẩn Qi</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.039.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Liên hệ ưu đãi</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Ambient AT 4x2.png" alt="Ford Everest Ambient AT 4x2" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Ambient AT 4x2</h3>
+          <p class="mt-1 text-sm text-slate-600">SUV 7 chỗ cho gia đình trẻ, trang bị an toàn chủ động đầy đủ.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ diesel 2.0L 170 PS, hộp số 6AT</li>
+            <li>• Gói an toàn Co-Pilot360 với phanh khẩn cấp AEB</li>
+            <li>• Hệ thống SYNC 4A kèm màn hình 12 inch dựng đứng</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.099.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận tư vấn</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Ambient AT 4x2 (Trắng).png" alt="Ford Everest Ambient AT 4x2 màu trắng" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Ambient AT 4x2 (Trắng)</h3>
+          <p class="mt-1 text-sm text-slate-600">Tuỳ chọn màu trắng ngọc trai sang trọng, phù hợp gia đình yêu sự tinh tế.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Cảm biến lùi và camera hỗ trợ đỗ xe chuẩn HD</li>
+            <li>• Điều hoà tự động 2 vùng độc lập</li>
+            <li>• 7 túi khí bao trùm khoang hành khách</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.107.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe ngay</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Sport AT 4x2.png" alt="Ford Everest Sport AT 4x2" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Sport AT 4x2</h3>
+          <p class="mt-1 text-sm text-slate-600">Bản Sport với ngoại thất đen bóng và bộ mâm 20 inch mạnh mẽ.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ 2.0L turbo đơn, mô-men 405 Nm</li>
+            <li>• Nội thất ghế da đục lỗ, chỉnh điện 8 hướng</li>
+            <li>• Hệ thống âm thanh 8 loa sống động</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.178.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn lăn bánh</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Sport AT 4x2 (Trắng).png" alt="Ford Everest Sport AT 4x2 màu trắng" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Sport AT 4x2 (Trắng)</h3>
+          <p class="mt-1 text-sm text-slate-600">Giữ vẻ thể thao mà vẫn thanh lịch với tông màu trắng nổi bật.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Lẫy chuyển số trên vô-lăng cho cảm giác lái phấn khích</li>
+            <li>• Cửa khoang hành lý đóng mở điện</li>
+            <li>• Hệ thống kiểm soát áp suất lốp TPMS</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.186.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe ngay</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Sport SE.png" alt="Ford Everest Sport SE" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Sport SE</h3>
+          <p class="mt-1 text-sm text-slate-600">Phiên bản Special Edition với phụ kiện ngoại thất màu đen bóng đồng bộ.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Bộ decal thân xe và thanh thể thao riêng biệt</li>
+            <li>• Nội thất phối đen xanh cùng logo thêu SE</li>
+            <li>• Cửa sổ trời toàn cảnh Panorama</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.199.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Titanium 4x2.png" alt="Ford Everest Titanium 4x2" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Titanium 4x2</h3>
+          <p class="mt-1 text-sm text-slate-600">Bản Titanium cao cấp với ghế da nâu và nhiều công nghệ hỗ trợ lái.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Điều khiển hành trình thích ứng với Stop&amp;Go</li>
+            <li>• Hệ thống giữ làn đường chủ động</li>
+            <li>• Dàn âm thanh B&amp;O 12 loa cao cấp</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.299.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn tài chính</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Titanium 4x2 (Trắng).png" alt="Ford Everest Titanium 4x2 màu trắng" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Titanium 4x2 (Trắng)</h3>
+          <p class="mt-1 text-sm text-slate-600">Màu trắng ngọc trai sang trọng kèm cảm biến 360 độ hỗ trợ đỗ xe.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Camera 360 với hiển thị 3D trực quan</li>
+            <li>• Cửa hậu đá mở rảnh tay</li>
+            <li>• Sạc không dây chuẩn Qi cho ghế trước</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.307.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe ngay</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Titanium+ 4x4.png" alt="Ford Everest Titanium+ 4x4" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Titanium+ 4x4</h3>
+          <p class="mt-1 text-sm text-slate-600">Phiên bản hai cầu toàn thời gian với nhiều tiện nghi cao cấp.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Hệ dẫn động 4WD thông minh với khóa vi sai trung tâm</li>
+            <li>• Màn hình sau vô-lăng 12,4 inch hiển thị 3D</li>
+            <li>• Ghế trước chỉnh điện 10 hướng nhớ vị trí</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.434.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Titanium+ 4x4 (Trắng).png" alt="Ford Everest Titanium+ 4x4 màu trắng" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Titanium+ 4x4 (Trắng)</h3>
+          <p class="mt-1 text-sm text-slate-600">Màu trắng sang trọng kết hợp full option dẫn động hai cầu.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Hệ thống cảnh báo điểm mù với cảnh báo phương tiện cắt ngang</li>
+            <li>• Cửa sổ trời toàn cảnh Panorama</li>
+            <li>• Hàng ghế thứ ba gập điện một chạm</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.442.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn giao sớm</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Platinum.png" alt="Ford Everest Platinum" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Platinum</h3>
+          <p class="mt-1 text-sm text-slate-600">Đỉnh cao của Everest với đầy đủ công nghệ an toàn và tiện nghi hạng sang.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ Bi-Turbo 2.0L 210 PS kèm hộp số 10AT</li>
+            <li>• Ghế massage đa chế độ cho hàng ghế trước</li>
+            <li>• Hệ thống âm thanh B&amp;O 12 loa, subwoofer</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.545.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe hạng sang</a>
+          </div>
+        </article>
+
+        <article data-category="everest" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Everest Platinum (Trắng).png" alt="Ford Everest Platinum màu trắng" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Everest NextGen</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Everest Platinum (Trắng)</h3>
+          <p class="mt-1 text-sm text-slate-600">Ngoại thất màu trắng bạch kim kết hợp nội thất cao cấp tạo nên chuẩn mực mới.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Trợ lý đỗ xe tự động toàn phần</li>
+            <li>• Hệ thống kiểm soát hành trình chủ động với Stop&amp;Go</li>
+            <li>• Cửa sổ trời toàn cảnh và rèm che nắng điện</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.553.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Liên hệ ưu đãi</a>
+          </div>
+        </article>
+
+        <article data-category="territory" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Territory Trend MCA 2.png" alt="Ford Territory Trend MCA 2" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Territory</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Territory Trend MCA 2</h3>
+          <p class="mt-1 text-sm text-slate-600">Crossover 5 chỗ mới nâng cấp giữa vòng đời với thiết kế trẻ trung.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ EcoBoost 1.5L 168 PS, hộp số CVT</li>
+            <li>• Màn hình kép 12,3 inch hỗ trợ Apple CarPlay không dây</li>
+            <li>• 6 túi khí và cảm biến áp suất lốp</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 762.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
+          </div>
+        </article>
+
+        <article data-category="territory" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Territory Titanium MCA 2.png" alt="Ford Territory Titanium MCA 2" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Territory</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Territory Titanium MCA 2</h3>
+          <p class="mt-1 text-sm text-slate-600">Trang bị nội thất da, công nghệ an toàn tiên tiến cho hành trình đô thị.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Gói Ford Co-Pilot360 với hỗ trợ giữ làn</li>
+            <li>• Cửa sổ trời toàn cảnh Panorama</li>
+            <li>• Sạc không dây và 4 cổng USB Type-C</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 840.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đăng ký lái thử</a>
+          </div>
+        </article>
+
+        <article data-category="territory" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Territory Titanium X MCA 2.png" alt="Ford Territory Titanium X MCA 2" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Territory</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Territory Titanium X MCA 2</h3>
+          <p class="mt-1 text-sm text-slate-600">Phiên bản cao nhất với hệ thống hỗ trợ lái cấp độ 2 và tiện nghi dẫn đầu phân khúc.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Hệ thống hỗ trợ lái bán tự động Intelligent Cruise Assist</li>
+            <li>• Ghế lái nhớ 3 vị trí kèm làm mát/sưởi</li>
+            <li>• Hệ thống âm thanh 10 loa cao cấp</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 896.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn nâng cấp</a>
+          </div>
+        </article>
+
+        <article data-category="transit" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Transit Trend 16S.png" alt="Ford Transit Trend 16S" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Transit</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Transit Trend 16S</h3>
+          <p class="mt-1 text-sm text-slate-600">Minibus 16 chỗ tiêu chuẩn, phù hợp vận tải hành khách và du lịch.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ diesel 2.2L 138 PS tiết kiệm nhiên liệu</li>
+            <li>• Hệ thống treo sau nhíp lá 2 tầng êm ái</li>
+            <li>• Trang bị 2 túi khí và phanh ABS/EBD</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 907.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Nhận báo giá</a>
+          </div>
+        </article>
+
+        <article data-category="transit" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Transit Premium 16S.png" alt="Ford Transit Premium 16S" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Transit</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Transit Premium 16S</h3>
+          <p class="mt-1 text-sm text-slate-600">Nội thất 16 chỗ bọc da sang trọng, thích hợp đưa đón doanh nghiệp cao cấp.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Ghế ngồi ngả sâu, bệ tỳ tay riêng từng ghế</li>
+            <li>• Điều hoà độc lập cho từng vùng ghế</li>
+            <li>• Camera lùi và cảm biến lùi hỗ trợ tài xế</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 997.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Đặt xe ngay</a>
+          </div>
+        </article>
+
+        <article data-category="transit" class="product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-5 shadow transition hover:-translate-y-1 hover:shadow-lg">
+          <figure class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-100">
+            <img src="background/Transit Premium 18S.png" alt="Ford Transit Premium 18S" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+          </figure>
+          <div class="mt-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-blue-600">
+            <span>Transit</span>
+            <span>2025</span>
+          </div>
+          <h3 class="mt-2 text-lg font-semibold text-slate-900">Transit Premium 18S</h3>
+          <p class="mt-1 text-sm text-slate-600">Bản 18 chỗ mở rộng, phù hợp kinh doanh du lịch và đưa đón nhân sự.</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-500">
+            <li>• Động cơ 2.4L Duratorq công suất 138 PS</li>
+            <li>• Hệ thống cân bằng điện tử và kiểm soát chống lật</li>
+            <li>• Khoang hành lý lớn, tùy chỉnh ghế linh hoạt</li>
+          </ul>
+          <div class="mt-auto border-t border-slate-100 pt-4 flex items-center justify-between text-sm">
+            <span class="text-base font-semibold text-slate-900">Giá công bố 1.091.000.000₫</span>
+            <a href="#contact" class="font-semibold text-blue-700 hover:underline">Tư vấn đội xe</a>
           </div>
         </article>
       </div>
 
-      <p class="mt-4 text-xs text-slate-500">*Giá tham khảo (đã bao gồm VAT). Vui lòng liên hệ Ngô Anh Khôi để nhận khuyến mại và gói trả góp mới nhất.</p>
+      <p class="mt-4 text-xs text-slate-500">*Giá công bố (đã bao gồm VAT). Vui lòng liên hệ Ngô Anh Khôi để nhận khuyến mại và gói trả góp mới nhất.</p>
     </div>
   </section>
-
   <!-- SHOWROOM -->
   <section class="py-16 bg-white" aria-labelledby="showroom-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
