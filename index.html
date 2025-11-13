@@ -48,7 +48,7 @@
 </script>
 
   <!-- Google tag (gtag.js) -->
- <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YEH8XLHV4V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -56,6 +56,24 @@
   gtag('js', new Date());
 
   gtag('config', 'G-YEH8XLHV4V');
+</script>
+<!-- Event snippet for Nhấp để gọi - Ford conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16673835420/MYqNCLPfjr8bEJyT2o4-',
+      'value': 1.0,
+      'currency': 'VND',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -82,9 +100,9 @@
           <a href="#contact" class="hover:text-blue-700">Liên hệ</a>
         </nav>
 
-        <a href="tel:+84938793333" class="sm:hidden inline-flex items-center rounded-xl border border-blue-600 px-3 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50">Gọi Khôi</a>
+        <a href="tel:+84938793333" onclick="return gtag_report_conversion('tel:+84938793333');" class="sm:hidden inline-flex items-center rounded-xl border border-blue-600 px-3 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50">Gọi Khôi</a>
         <div class="hidden sm:flex items-center gap-3">
-          <a href="tel:+84938793333" class="inline-flex items-center rounded-xl border border-blue-600 px-3 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50">Gọi Khôi</a>
+          <a href="tel:+84938793333" onclick="return gtag_report_conversion('tel:+84938793333');" class="inline-flex items-center rounded-xl border border-blue-600 px-3 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50">Gọi Khôi</a>
           <a href="#contact" class="inline-flex items-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white hover:bg-blue-700">Nhận báo giá</a>
         </div>
       </div>
@@ -97,7 +115,7 @@
           <a href="#services" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Dịch vụ</a>
           <a href="#about" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Về chúng tôi</a>
           <a href="#contact" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Liên hệ</a>
-          <a href="tel:+84938793333" class="block rounded-lg bg-blue-600 px-3 py-2 text-center font-semibold text-white hover:bg-blue-700">Gọi ngay</a>
+          <a href="tel:+84938793333" onclick="return gtag_report_conversion('tel:+84938793333');" class="block rounded-lg bg-blue-600 px-3 py-2 text-center font-semibold text-white hover:bg-blue-700">Gọi ngay</a>
         </nav>
       </div>
     </div>
@@ -374,7 +392,7 @@
         <dl class="mt-4 text-sm text-slate-700 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <dt class="text-slate-500">Điện thoại</dt>
-            <dd class="font-medium"><a href="tel:+84938793333" class="hover:underline">+84 938 79 3333</a></dd>
+            <dd class="font-medium"><a href="tel:+84938793333" onclick="return gtag_report_conversion('tel:+84938793333');" class="hover:underline">+84 938 79 3333</a></dd>
           </div>
           <div>
             <dt class="text-slate-500">Zalo</dt>
@@ -426,7 +444,7 @@
           </form>
 
           <div class="mt-6 text-sm text-slate-600 space-y-3">
-            <p><strong>Hotline:</strong> <a href="tel:+84938793333" class="text-blue-700 hover:underline">+84 938 79 3333</a></p>
+            <p><strong>Hotline:</strong> <a href="tel:+84938793333" onclick="return gtag_report_conversion('tel:+84938793333');" class="text-blue-700 hover:underline">+84 938 79 3333</a></p>
             <div>
               <p class="font-semibold text-slate-700">Địa chỉ showroom</p>
               <ul class="mt-2 space-y-1">
